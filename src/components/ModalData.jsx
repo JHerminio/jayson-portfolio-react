@@ -71,8 +71,8 @@ export const modalContentMap = {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=300&q=80"
-              alt="Custom Coded Sales Funnels"
+              src="https://jherminio.github.io/little-bloomer-academy/"
+              alt="Little Bloomer Academy"
               style={{
                 width: "85px",
                 height: "70px",
