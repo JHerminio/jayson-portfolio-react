@@ -7,7 +7,7 @@ export default function Sidebar({ isMenuOpen, closeMenu }) {
     <aside className={`sidebar ${isMenuOpen ? "active" : ""}`} id="sidebar">
       <div className="profile-section">
         <img
-          src="./src/assets/jaysonherminio.jpg"
+          src="/src/assets/jaysonherminio.jpg"
           alt="Jayson Herminio"
           className="profile-img"
         />

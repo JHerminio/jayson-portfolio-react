@@ -5,7 +5,7 @@ export default function MobileHeader({ isMenuOpen, toggleMenu }) {
     <div className="mobile-header">
       <div className="mobile-logo">
         <img
-          src="./src/assets/jaysonherminio.jpg"
+          src="/src/assets/jaysonherminio.jpg"
           alt="Profile"
           className="mobile-avatar"
         />
