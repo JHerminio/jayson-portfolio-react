@@ -233,216 +233,6 @@ export const modalContentMap = {
     ),
   },
 
-  // "/projects": {
-  //   icon: "ph-folder",
-  //   title: "Featured Projects",
-  //   content: (
-  //     <>
-  //       <p style={{ marginBottom: "1.25rem" }}>
-  //         Engineering robust systems, custom workflows, and high-converting app
-  //         platforms:
-  //       </p>
-
-  //       <div
-  //         style={{ display: "flex", flexDirection: "column", gap: "0.875rem" }}
-  //       >
-  //         {/* Card 1 */}
-  //         <a
-  //           href="https://jherminio.github.io/little-bloomer-academy/"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="project-modal-card"
-  //           style={{
-  //             display: "flex",
-  //             alignItems: "center",
-  //             gap: "1rem",
-  //             padding: "0.875rem",
-  //             background: "#f8fafc",
-  //             borderRadius: "16px",
-  //             textDecoration: "none",
-  //             color: "inherit",
-  //             border: "1px solid rgba(0,0,0,0.05)",
-  //             transition:
-  //               "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
-  //           }}
-  //         >
-  //           <img
-  //             src="./src/assets/little-bloomer-academy.webp"
-  //             alt="Little Bloomer Academy"
-  //             style={{
-  //               width: "85px",
-  //               height: "70px",
-  //               objectFit: "cover",
-  //               borderRadius: "10px",
-  //               flexShrink: 0,
-  //             }}
-  //           />
-  //           <div style={{ flexGrow: 1 }}>
-  //             <div
-  //               style={{
-  //                 display: "flex",
-  //                 alignItems: "center",
-  //                 justifyContent: "space-between",
-  //                 marginBottom: "0.25rem",
-  //               }}
-  //             >
-  //               <strong
-  //                 style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
-  //               >
-  //                 Little Bloomer Academy
-  //               </strong>
-  //               <i
-  //                 className="ph ph-arrow-up-right"
-  //                 style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
-  //               ></i>
-  //             </div>
-  //             <p
-  //               style={{
-  //                 fontSize: "0.8rem",
-  //                 color: "var(--text-muted)",
-  //                 margin: 0,
-  //                 lineHeight: "1.4",
-  //               }}
-  //             >
-  //               Welcome to Little Bloomer Academy!
-  //               <br /> A sweet, nurturing environment where little minds bloom
-  //               through play, laughter, and creativity.
-  //             </p>
-  //           </div>
-  //         </a>
-
-  //         {/* Card 2 */}
-  //         <a
-  //           href="https://www.facebook.com/share/p/1Ju3zdAtQY/"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="project-modal-card"
-  //           style={{
-  //             display: "flex",
-  //             alignItems: "center",
-  //             gap: "1rem",
-  //             padding: "0.875rem",
-  //             background: "#f8fafc",
-  //             borderRadius: "16px",
-  //             textDecoration: "none",
-  //             color: "inherit",
-  //             border: "1px solid rgba(0,0,0,0.05)",
-  //             transition:
-  //               "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
-  //           }}
-  //         >
-  //           <img
-  //             src="./src/assets/summer-splash-community-fun-run.webp"
-  //             alt="GoHighLevel (GHL) Automations"
-  //             style={{
-  //               width: "85px",
-  //               height: "70px",
-  //               objectFit: "cover",
-  //               borderRadius: "10px",
-  //               flexShrink: 0,
-  //             }}
-  //           />
-  //           <div style={{ flexGrow: 1 }}>
-  //             <div
-  //               style={{
-  //                 display: "flex",
-  //                 alignItems: "center",
-  //                 justifyContent: "space-between",
-  //                 marginBottom: "0.25rem",
-  //               }}
-  //             >
-  //               <strong
-  //                 style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
-  //               >
-  //                 Summer Splash Community Fun Run
-  //               </strong>
-  //               <i
-  //                 className="ph ph-arrow-up-right"
-  //                 style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
-  //               ></i>
-  //             </div>
-  //             <p
-  //               style={{
-  //                 fontSize: "0.8rem",
-  //                 color: "var(--text-muted)",
-  //                 margin: 0,
-  //                 lineHeight: "1.4",
-  //               }}
-  //             >
-  //               Team GFE proudly invites everyone to join our first-ever
-  //               community fun run on May 10, 2026 at the Guiguinto Municipal
-  //               Oval!
-  //             </p>
-  //           </div>
-  //         </a>
-
-  //         {/* Card 3 */}
-  //         <a
-  //           href="https://jherminio.github.io/myportfolio/"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //           className="project-modal-card"
-  //           style={{
-  //             display: "flex",
-  //             alignItems: "center",
-  //             gap: "1rem",
-  //             padding: "0.875rem",
-  //             background: "#f8fafc",
-  //             borderRadius: "16px",
-  //             textDecoration: "none",
-  //             color: "inherit",
-  //             border: "1px solid rgba(0,0,0,0.05)",
-  //             transition:
-  //               "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
-  //           }}
-  //         >
-  //           <img
-  //             src="./src/assets/jh-background.jpg"
-  //             alt="Custom API Integrations"
-  //             style={{
-  //               width: "85px",
-  //               height: "70px",
-  //               objectFit: "cover",
-  //               borderRadius: "10px",
-  //               flexShrink: 0,
-  //             }}
-  //           />
-  //           <div style={{ flexGrow: 1 }}>
-  //             <div
-  //               style={{
-  //                 display: "flex",
-  //                 alignItems: "center",
-  //                 justifyContent: "space-between",
-  //                 marginBottom: "0.25rem",
-  //               }}
-  //             >
-  //               <strong
-  //                 style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
-  //               >
-  //                 Front-End Developer & UI/UX Designer
-  //               </strong>
-  //               <i
-  //                 className="ph ph-arrow-up-right"
-  //                 style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
-  //               ></i>
-  //             </div>
-  //             <p
-  //               style={{
-  //                 fontSize: "0.8rem",
-  //                 color: "var(--text-muted)",
-  //                 margin: 0,
-  //                 lineHeight: "1.4",
-  //               }}
-  //             >
-  //               Crafting clean code and dynamic web experiences.
-  //             </p>
-  //           </div>
-  //         </a>
-  //       </div>
-  //     </>
-  //   ),
-  // },
-
   "/projects": {
     icon: "ph-folder",
     title: "Featured Projects",
@@ -458,12 +248,24 @@ export const modalContentMap = {
         >
           {/* Card 1 */}
           <a
-            href="https://your-link.com"
+            href="https://jherminio.github.io/little-bloomer-academy/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-modal-card"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "0.875rem",
+              background: "#f8fafc",
+              borderRadius: "16px",
+              textDecoration: "none",
+              color: "inherit",
+              border: "1px solid rgba(0,0,0,0.05)",
+              transition:
+                "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
+            }}
           >
-            {/* 2. USE THE IMPORTED VARIABLE HERE */}
             <img
               src={project1Img}
               alt="Little Bloomer Academy"
@@ -475,25 +277,63 @@ export const modalContentMap = {
                 flexShrink: 0,
               }}
             />
-            <div>
-              <strong>Little Bloomer Academy</strong>
-              <p>
-                Welcome to Little Bloomer Academy! A sweet, nurturing
-                environment...
+            <div style={{ flexGrow: 1 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: "0.25rem",
+                }}
+              >
+                <strong
+                  style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
+                >
+                  Little Bloomer Academy
+                </strong>
+                <i
+                  className="ph ph-arrow-up-right"
+                  style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
+                ></i>
+              </div>
+              <p
+                style={{
+                  fontSize: "0.8rem",
+                  color: "var(--text-muted)",
+                  margin: 0,
+                  lineHeight: "1.4",
+                }}
+              >
+                Welcome to Little Bloomer Academy!
+                <br /> A sweet, nurturing environment where little minds bloom
+                through play, laughter, and creativity.
               </p>
             </div>
           </a>
 
           {/* Card 2 */}
           <a
-            href="https://your-link.com"
+            href="https://www.facebook.com/share/p/1Ju3zdAtQY/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-modal-card"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "0.875rem",
+              background: "#f8fafc",
+              borderRadius: "16px",
+              textDecoration: "none",
+              color: "inherit",
+              border: "1px solid rgba(0,0,0,0.05)",
+              transition:
+                "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
+            }}
           >
             <img
               src={project2Img}
-              alt="Summer Splash Community Fun Run"
+              alt="GoHighLevel (GHL) Automations"
               style={{
                 width: "85px",
                 height: "70px",
@@ -502,25 +342,63 @@ export const modalContentMap = {
                 flexShrink: 0,
               }}
             />
-            <div>
-              <strong>Summer Splash Community Fun Run</strong>
-              <p>
+            <div style={{ flexGrow: 1 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: "0.25rem",
+                }}
+              >
+                <strong
+                  style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
+                >
+                  Summer Splash Community Fun Run
+                </strong>
+                <i
+                  className="ph ph-arrow-up-right"
+                  style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
+                ></i>
+              </div>
+              <p
+                style={{
+                  fontSize: "0.8rem",
+                  color: "var(--text-muted)",
+                  margin: 0,
+                  lineHeight: "1.4",
+                }}
+              >
                 Team GFE proudly invites everyone to join our first-ever
-                community fun run...
+                community fun run on May 10, 2026 at the Guiguinto Municipal
+                Oval!
               </p>
             </div>
           </a>
 
           {/* Card 3 */}
           <a
-            href="https://your-link.com"
+            href="https://jherminio.github.io/myportfolio/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-modal-card"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "0.875rem",
+              background: "#f8fafc",
+              borderRadius: "16px",
+              textDecoration: "none",
+              color: "inherit",
+              border: "1px solid rgba(0,0,0,0.05)",
+              transition:
+                "transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease",
+            }}
           >
             <img
               src={project3Img}
-              alt="Front-End Developer & UI/UX Designer"
+              alt="Custom API Integrations"
               style={{
                 width: "85px",
                 height: "70px",
@@ -529,15 +407,138 @@ export const modalContentMap = {
                 flexShrink: 0,
               }}
             />
-            <div>
-              <strong>Front-End Developer & UI/UX Designer</strong>
-              <p>Crafting clean code and dynamic web experiences.</p>
+            <div style={{ flexGrow: 1 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  marginBottom: "0.25rem",
+                }}
+              >
+                <strong
+                  style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
+                >
+                  Front-End Developer & UI/UX Designer
+                </strong>
+                <i
+                  className="ph ph-arrow-up-right"
+                  style={{ color: "var(--accent-orange)", fontSize: "1.1rem" }}
+                ></i>
+              </div>
+              <p
+                style={{
+                  fontSize: "0.8rem",
+                  color: "var(--text-muted)",
+                  margin: 0,
+                  lineHeight: "1.4",
+                }}
+              >
+                Crafting clean code and dynamic web experiences.
+              </p>
             </div>
           </a>
         </div>
       </>
     ),
   },
+
+  // "/projects": {
+  //   icon: "ph-folder",
+  //   title: "Featured Projects",
+  //   content: (
+  //     <>
+  //       <p style={{ marginBottom: "1.25rem" }}>
+  //         Engineering robust systems, custom workflows, and high-converting app
+  //         platforms:
+  //       </p>
+
+  //       <div
+  //         style={{ display: "flex", flexDirection: "column", gap: "0.875rem" }}
+  //       >
+  //         {/* Card 1 */}
+  //         <a
+  //           href="https://your-link.com"
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="project-modal-card"
+  //         >
+  //           {/* 2. USE THE IMPORTED VARIABLE HERE */}
+  //           <img
+  //             src={project1Img}
+  //             alt="Little Bloomer Academy"
+  //             style={{
+  //               width: "85px",
+  //               height: "70px",
+  //               objectFit: "cover",
+  //               borderRadius: "10px",
+  //               flexShrink: 0,
+  //             }}
+  //           />
+  //           <div>
+  //             <strong>Little Bloomer Academy</strong>
+  //             <p>
+  //               Welcome to Little Bloomer Academy! A sweet, nurturing
+  //               environment...
+  //             </p>
+  //           </div>
+  //         </a>
+
+  //         {/* Card 2 */}
+  //         <a
+  //           href="https://your-link.com"
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="project-modal-card"
+  //         >
+  //           <img
+  //             src={project2Img}
+  //             alt="Summer Splash Community Fun Run"
+  //             style={{
+  //               width: "85px",
+  //               height: "70px",
+  //               objectFit: "cover",
+  //               borderRadius: "10px",
+  //               flexShrink: 0,
+  //             }}
+  //           />
+  //           <div>
+  //             <strong>Summer Splash Community Fun Run</strong>
+  //             <p>
+  //               Team GFE proudly invites everyone to join our first-ever
+  //               community fun run...
+  //             </p>
+  //           </div>
+  //         </a>
+
+  //         {/* Card 3 */}
+  //         <a
+  //           href="https://your-link.com"
+  //           target="_blank"
+  //           rel="noopener noreferrer"
+  //           className="project-modal-card"
+  //         >
+  //           <img
+  //             src={project3Img}
+  //             alt="Front-End Developer & UI/UX Designer"
+  //             style={{
+  //               width: "85px",
+  //               height: "70px",
+  //               objectFit: "cover",
+  //               borderRadius: "10px",
+  //               flexShrink: 0,
+  //             }}
+  //           />
+  //           <div>
+  //             <strong>Front-End Developer & UI/UX Designer</strong>
+  //             <p>Crafting clean code and dynamic web experiences.</p>
+  //           </div>
+  //         </a>
+  //       </div>
+  //     </>
+  //   ),
+  // },
+
   "/services": {
     icon: "ph-stack",
     title: "Services & Capabilities",
