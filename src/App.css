@@ -891,6 +891,52 @@ body {
   display: block;
 }
 
+/* --- CUSTOM MODAL SCROLLBAR --- */
+
+/* 1. Ensure the modal container clips overflow gracefully */
+.modal-overlay-content,
+.modal-body,
+.modal-card {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px; /* Keeps content away from the scrollbar */
+
+  /* Firefox Custom Scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* 2. WebKit Browsers (Chrome, Safari, Edge) Scrollbar Width */
+.modal-overlay-content::-webkit-scrollbar,
+.modal-body::-webkit-scrollbar,
+.modal-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* 3. Track (keeps scrollbar inside rounded corners) */
+.modal-overlay-content::-webkit-scrollbar-track,
+.modal-body::-webkit-scrollbar-track,
+.modal-card::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 20px 0; /* Prevents scrollbar from sticking out at top/bottom corners */
+}
+
+/* 4. Scrollbar Thumb (Pill Shape) */
+.modal-overlay-content::-webkit-scrollbar-thumb,
+.modal-body::-webkit-scrollbar-thumb,
+.modal-card::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+/* 5. Hover State */
+.modal-overlay-content::-webkit-scrollbar-thumb:hover,
+.modal-body::-webkit-scrollbar-thumb:hover,
+.modal-card::-webkit-scrollbar-thumb:hover {
+  background-color: #ff5733; /* Matches your accent orange */
+}
+
 /* Responsive Queries */
 @media (max-width: 1200px) {
   .hero-title {

@@ -87,7 +87,7 @@ export default function BentoGrid() {
           </div>
           <h3>CREDENTIALS</h3>
         </div>
-        <p className="card-desc">Certified GHL Admin, Aspiring AI Engineer.</p>
+        <p className="card-desc">Certificate</p>
         <div className="badge-container">
           <div className="cert-badge">
             <i className="ph-fill ph-seal-check"></i>
