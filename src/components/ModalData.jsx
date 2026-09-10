@@ -14,12 +14,6 @@ export const navLinks = [
     icon: "ph ph-folder",
     key: "Projects",
   },
-  {
-    path: "/services",
-    label: "Services",
-    icon: "ph ph-stack",
-    key: "Services",
-  },
   // {
   //   path: "/kape-tools",
   //   label: "Kape Tools",
@@ -539,28 +533,6 @@ export const modalContentMap = {
   //   ),
   // },
 
-  "/services": {
-    icon: "ph-stack",
-    title: "Services & Capabilities",
-    content: (
-      <>
-        <p>Specialized dev solutions built once to run seamlessly forever:</p>
-        <ul>
-          <li>
-            <strong>01. Coded Funnels:</strong> Pixel-perfect responsive web
-            pages
-          </li>
-          <li>
-            <strong>02. Automation:</strong> End-to-end CRM lead workflows
-          </li>
-          <li>
-            <strong>03. AI Agents:</strong> RAG Chatbots & intelligent
-            assistants
-          </li>
-        </ul>
-      </>
-    ),
-  },
   // "/kape-tools": {
   //   icon: "ph-wrench",
   //   title: "Kape Tools & Integrations",

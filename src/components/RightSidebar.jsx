@@ -1,11 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import project1Img from "../assets/little-bloomer-academy.webp"; // Little Bloomer Academy
+import project2Img from "../assets/summer-splash-community-fun-run.webp"; // Summer Splash
+import project3Img from "../assets/jh-background.jpg"; // Front-End Developer
+import project4Img from "../assets/project-banner.png"; //
+// import aboutImg1 from "../assets/about.png";
 
-export default function BentoGrid() {
+export default function RightSide() {
   const navigate = useNavigate();
 
   return (
-    <div className="bento-grid">
+    <div className="rightSide-grid">
       {/* Projects Card */}
       <div
         className="rightSide-card span-2 interactive-card"
@@ -21,12 +26,12 @@ export default function BentoGrid() {
           Funnels, workflows and apps built to solve real problems.
         </p>
         <div className="project-img-wrapper">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
-            alt="Project Preview"
-          />
-          <div className="overlay-text">Seven days to remember what strong</div>
+          <img src={project4Img} alt="Project Preview" />
+          <div className="overlay-text">Click to view</div>
         </div>
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "0.875rem" }}
+        ></div>
       </div>
 
       {/* About Card */}
@@ -42,10 +47,7 @@ export default function BentoGrid() {
         </div>
         <p className="card-desc">Who I am and how I work.</p>
         <div className="about-illustration">
-          <img
-            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=300&q=80"
-            alt="Working"
-          />
+          {/* <img src={aboutImg1} alt="Working" /> */}
         </div>
       </div>
 
@@ -94,52 +96,6 @@ export default function BentoGrid() {
           </div>
           <span className="cert-label">Certified Admin</span>
         </div>
-      </div>
-
-      {/* Services Card */}
-      <div
-        className="rightSide-card span-1 interactive-card"
-        onClick={() => navigate("/services")}
-      >
-        <div className="card-header">
-          <div className="icon-box orange">
-            <i className="ph ph-stack"></i>
-          </div>
-          <h3>SERVICES</h3>
-        </div>
-        <p className="card-desc">What I build for services and agencies.</p>
-        <ul className="services-list">
-          <li>
-            <span>
-              <i className="ph ph-code"></i> Coded Funnels
-            </span>
-            <span className="num">01</span>
-          </li>
-          <li>
-            <span>
-              <i className="ph ph-robot"></i> GHL Automation
-            </span>
-            <span className="num">02</span>
-          </li>
-          <li>
-            <span>
-              <i className="ph ph-database"></i> CRM Setup
-            </span>
-            <span className="num">03</span>
-          </li>
-          <li>
-            <span>
-              <i className="ph ph-globe"></i> Website
-            </span>
-            <span className="num">04</span>
-          </li>
-          <li>
-            <span>
-              <i className="ph ph-app-window"></i> Apps
-            </span>
-            <span className="num">05</span>
-          </li>
-        </ul>
       </div>
 
       {/* Testimonials Card */}

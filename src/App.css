@@ -191,7 +191,7 @@ body {
   gap: 0.75rem;
   font-size: 0.75rem;
   color: var(--text-muted);
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   padding-top: 0.5rem;
   flex-shrink: 0;
 }
@@ -323,7 +323,7 @@ body {
 }
 
 /* Bento Grid System */
-.bento-grid {
+.rightSide-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(280px, auto);
@@ -489,36 +489,6 @@ body {
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
-}
-
-.services-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.services-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.5rem 0;
-  border-bottom: 1px dashed var(--border-color);
-}
-
-.services-list li:last-child {
-  border-bottom: none;
-}
-.services-list li span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.services-list .num {
-  color: var(--text-muted);
-  font-size: 0.75rem;
 }
 
 .testimonials-list {
@@ -942,7 +912,7 @@ body {
   .hero-title {
     font-size: 2.8rem;
   }
-  .bento-grid {
+  .rightSide-grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .span-2 {
@@ -957,7 +927,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  .bento-grid {
+  .rightSide-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .span-2 {
@@ -1035,7 +1005,7 @@ body {
   .hero-title {
     font-size: 2.2rem;
   }
-  .bento-grid {
+  .rightSide-grid {
     grid-template-columns: 1fr;
   }
   .span-2,
