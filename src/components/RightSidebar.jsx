@@ -8,7 +8,7 @@ export default function BentoGrid() {
     <div className="bento-grid">
       {/* Projects Card */}
       <div
-        className="bento-card span-2 interactive-card"
+        className="rightSide-card span-2 interactive-card"
         onClick={() => navigate("/projects")}
       >
         <div className="card-header">
@@ -31,7 +31,7 @@ export default function BentoGrid() {
 
       {/* About Card */}
       <div
-        className="bento-card span-1 interactive-card"
+        className="rightSide-card span-1 interactive-card"
         onClick={() => navigate("/about")}
       >
         <div className="card-header">
@@ -51,14 +51,14 @@ export default function BentoGrid() {
 
       {/* AI Builds Card */}
       <div
-        className="bento-card span-1 interactive-card"
+        className="rightSide-card span-1 interactive-card"
         onClick={() => navigate("/kape-tools")}
       >
         <div className="card-header">
           <div className="icon-box orange">
             <i className="ph ph-lightbulb"></i>
           </div>
-          <h3>AI BUILDS</h3>
+          <h3>My Tech Stacks</h3>
         </div>
         <p className="card-desc">
           Agents, RAG chatbots and the tools I lean on them.
@@ -78,7 +78,7 @@ export default function BentoGrid() {
 
       {/* Credentials Card */}
       <div
-        className="bento-card span-1 interactive-card"
+        className="rightSide-card span-1 interactive-card"
         onClick={() => navigate("/about")}
       >
         <div className="card-header">
@@ -98,7 +98,7 @@ export default function BentoGrid() {
 
       {/* Services Card */}
       <div
-        className="bento-card span-1 interactive-card"
+        className="rightSide-card span-1 interactive-card"
         onClick={() => navigate("/services")}
       >
         <div className="card-header">
@@ -143,40 +143,66 @@ export default function BentoGrid() {
       </div>
 
       {/* Testimonials Card */}
-      <div
-        className="bento-card span-2 interactive-card"
-        onClick={() => navigate("/testimonials")}
-      >
+      <div className="rightSide-card span-2">
         <div className="card-header">
           <div className="icon-box orange">
-            <i className="ph ph-chat-circle-quote"></i>
+            <i className="ph ph-chat-circle"></i>
           </div>
           <h3>TESTIMONIALS</h3>
         </div>
         <p className="card-desc">
           What the people I build for say about the work.
         </p>
+
         <div className="testimonials-list">
-          <div className="testimonial-item">
+          {/* Client 1: Team GFE */}
+          <div
+            className="testimonial-item interactive-testimonial"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate("/testimonials/team-gfe");
+            }}
+          >
             <div className="client-info">
               <div className="dot orange"></div>
-              <strong>Client 1</strong>
+              <strong>Team GFE</strong>
+              <i className="ph ph-arrow-up-right click-icon"></i>
             </div>
-            <p className="client-role">Operations Manager & GHL Specialist</p>
-            <p className="client-tags">GHL Build • Automation • Monitoring</p>
+            <p className="client-role">Guiguinto Fitness Enthusiasts</p>
+            <p className="client-tags">
+              UI/UX Design • Event Branding • Finisher Medal Design
+            </p>
           </div>
-          <div className="testimonial-item">
+
+          {/* Client 2 */}
+          <div
+            className="testimonial-item interactive-testimonial"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate("/testimonials/client-2");
+            }}
+          >
             <div className="client-info">
               <div className="dot red"></div>
               <strong>Client 2</strong>
+              <i className="ph ph-arrow-up-right click-icon"></i>
             </div>
             <p className="client-role">GHL Specialist & Agentic AI Engineer</p>
             <p className="client-tags">CRM • Pipelines • Forms</p>
           </div>
-          <div className="testimonial-item">
+
+          {/* Client 3 */}
+          <div
+            className="testimonial-item interactive-testimonial"
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate("/testimonials/client-3");
+            }}
+          >
             <div className="client-info">
               <div className="dot orange"></div>
               <strong>Client 3</strong>
+              <i className="ph ph-arrow-up-right click-icon"></i>
             </div>
             <p className="client-role">Web Dev & GHL Specialist</p>
             <p className="client-tags">Web Dev • GHL • Automation</p>

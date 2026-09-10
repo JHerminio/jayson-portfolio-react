@@ -152,7 +152,7 @@ body {
 .social-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  color: var(--accent-blue);
+  color: var(--accent-orange);
 }
 
 .main-nav {
@@ -181,7 +181,7 @@ body {
 .nav-item:hover,
 .nav-item.active {
   background: #fff;
-  color: var(--text-main);
+  color: var(--accent-orange);
   box-shadow: var(--shadow-sm);
 }
 
@@ -330,7 +330,7 @@ body {
   gap: 1.5rem;
 }
 
-.bento-card {
+.rightSide-card {
   background: var(--card-bg);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
@@ -343,16 +343,18 @@ body {
   overflow: hidden;
 }
 
-.bento-card:nth-child(2),
-.bento-card:nth-child(3) {
-  background: var(--card-bg-blue);
-  border: none;
+.rightSide-card:nth-child(2),
+.rightSide-card:nth-child(3) {
+  background: var(--card-bg);
+  /* border: none; */
+  border: 1px solid var(--border-color);
 }
 
 .interactive-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
   cursor: pointer;
+  border: 1px solid var(--accent-orange);
 }
 
 .span-2 {
@@ -430,7 +432,7 @@ body {
 .about-illustration {
   flex-grow: 1;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: center;
 }
 
@@ -529,10 +531,37 @@ body {
   padding: 1rem;
   border-radius: var(--radius-md);
   transition: var(--transition);
+  border: 1.5px solid var(--border-color);
 }
 .testimonial-item:hover {
   background: #fff;
   box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--accent-orange);
+}
+.interactive-testimonial {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.interactive-testimonial:hover {
+  background: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.click-icon {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.interactive-testimonial:hover .click-icon {
+  opacity: 1;
+  color: var(--accent-orange);
+  transform: translate(2px, -2px);
 }
 .client-info {
   display: flex;
@@ -677,6 +706,191 @@ body {
   color: var(--text-main, #141b2d);
 }
 
+/* --- GET IN TOUCH / CONTACT FORM DESIGN ---------------------------------*/
+.contact-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* .contact-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.contact-title .highlight-orange {
+  color: #ff5733;
+} */
+
+.contact-subtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 520px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Dark Card Container */
+.contact-card-container {
+  background: #0b0e14;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .contact-form .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Form Inputs & Textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px 20px;
+  background: #05070a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #64748b;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5733;
+  box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.15);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* Orange Pill Submit Button */
+.contact-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff5733;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.contact-btn:hover {
+  background: #e04a28;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 87, 51, 0.35);
+}
+
+.contact-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-btn i {
+  font-size: 1rem;
+}
+
+/* --- CV VIEWER MODAL STYLES --- */
+.cv-viewer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Sticky Action Bar */
+.cv-action-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.5rem 0;
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Download PDF Pill Button */
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff5733;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(255, 87, 51, 0.3);
+  transition: all 0.2s ease;
+}
+
+.cv-download-btn:hover {
+  background: #e04a28;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 87, 51, 0.45);
+}
+
+/* Stacked Image Container */
+.cv-pages-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.cv-page-card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+}
+
+.cv-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Responsive Queries */
 @media (max-width: 1200px) {
   .hero-title {
@@ -688,10 +902,10 @@ body {
   .span-2 {
     grid-column: span 3;
   }
-  .bento-card:nth-child(2),
-  .bento-card:nth-child(3),
-  .bento-card:nth-child(4),
-  .bento-card:nth-child(5) {
+  .rightSide-card:nth-child(2),
+  .rightSide-card:nth-child(3),
+  .rightSide-card:nth-child(4),
+  .rightSide-card:nth-child(5) {
     grid-column: span 1;
   }
 }
@@ -703,10 +917,10 @@ body {
   .span-2 {
     grid-column: span 2;
   }
-  .bento-card:nth-child(n) {
+  .rightSide-card:nth-child(n) {
     grid-column: span 1;
   }
-  .bento-card.span-2 {
+  .rightSide-card.span-2 {
     grid-column: span 2;
   }
 }
