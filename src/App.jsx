@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import MobileHeader from "./components/MobileHeader";
-import MobileFooter from "./components/MobileFooter";
+import MobileHeader from "./components/sideBar/MobileHeader";
+import MobileFooter from "./components/sideBar/MobileFooter";
 
-import LeftSidebar from "./components/LeftSidebar";
-import RightSidebar from "./components/RightSidebar";
+import LeftSidebar from "./components/sideBar/LeftSidebar";
+import RightSidebar from "./components/mainContent/RightSidebar";
 
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./components/mainContent/HeroSection";
 import Ticker from "./components/Ticker";
 import ModalOverlay from "./components/ModalOverlay";
 import "./App.css";

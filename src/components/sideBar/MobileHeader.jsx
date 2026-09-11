@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/jaysonherminio.jpg";
+import profileImg from "../../assets/jaysonherminio.jpg";
 
 export default function MobileHeader({ isMenuOpen, toggleMenu }) {
   return (

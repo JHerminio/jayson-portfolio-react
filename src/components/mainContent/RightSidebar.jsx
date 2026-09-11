@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import project1Img from "../assets/little-bloomer-academy.webp"; // Little Bloomer Academy
-import project2Img from "../assets/summer-splash-community-fun-run.webp"; // Summer Splash
-import project3Img from "../assets/jh-background.jpg"; // Front-End Developer
-import project4Img from "../assets/project-banner.png"; //
+import project1Img from "../../assets/little-bloomer-academy.webp"; // Little Bloomer Academy
+import project2Img from "../../assets/summer-splash-community-fun-run.webp"; // Summer Splash
+import project3Img from "../../assets/jh-background.jpg"; // Front-End Developer
+import project4Img from "../../assets/project-banner.png"; //
 // import aboutImg1 from "../assets/about.png";
+
+// import Credentials from "./Credentials";
 
 export default function RightSide() {
   const navigate = useNavigate();
@@ -51,33 +53,6 @@ export default function RightSide() {
         </div>
       </div>
 
-      {/* AI Builds Card */}
-      <div
-        className="rightSide-card span-1 interactive-card"
-        onClick={() => navigate("/kape-tools")}
-      >
-        <div className="card-header">
-          <div className="icon-box orange">
-            <i className="ph ph-lightbulb"></i>
-          </div>
-          <h3>My Tech Stacks</h3>
-        </div>
-        <p className="card-desc">
-          Agents, RAG chatbots and the tools I lean on them.
-        </p>
-        <div className="tags-container">
-          <span className="tag">
-            <i className="ph-fill ph-robot"></i> KopeAI
-          </span>
-          <span className="tag">
-            <i className="ph-fill ph-magnifying-glass"></i> KopeSEO
-          </span>
-          <span className="tag">
-            <i className="ph-fill ph-book-open"></i> Kape AI search
-          </span>
-        </div>
-      </div>
-
       {/* Credentials Card */}
       <div
         className="rightSide-card span-1 interactive-card"
@@ -96,10 +71,108 @@ export default function RightSide() {
           </div>
           <span className="cert-label">Certified Admin</span>
         </div>
+        <div>{/* <Credentials /> */}</div>
+      </div>
+
+      {/* My Tech Stacks Card */}
+      <div
+        className="rightSide-card span-2 interactive-card"
+        onClick={() => navigate("/about")}
+      >
+        <div className="card-header">
+          <div className="icon-box orange">
+            <i className="ph ph-code"></i>
+          </div>
+          <h3>My Tech Stacks</h3>
+        </div>
+        <p className="card-desc">
+          Complete set of technologies, CMS tools, DevOps, and design software I
+          work with.
+        </p>
+        <div className="tags-container">
+          {/* Frontend */}
+          <span className="tag">
+            <i className="ph-fill ph-code-simple"></i> HTML
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-paint-brush"></i> CSS
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-code"></i> JavaScript
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-atom"></i> React
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-brackets-curly"></i> TypeScript
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-lightning"></i> Tailwind CSS
+          </span>
+
+          {/* Backend */}
+          <span className="tag">
+            <i className="ph-fill ph-tree-structure"></i> Node.js
+          </span>
+
+          {/* CMS & SEO */}
+          <span className="tag">
+            <i className="ph-fill ph-wordpress-logo"></i> WordPress
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-layout"></i> Elementor Pro
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-trend-up"></i> Rank Math SEO
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-magnifying-glass"></i> Yoast SEO
+          </span>
+
+          {/* Version Control & Dev Tools */}
+          <span className="tag">
+            <i className="ph-fill ph-git-branch"></i> Git
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-git-pull-request"></i> Bitbucket
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-github-logo"></i> GitHub
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-terminal-window"></i> VS Code
+          </span>
+
+          {/* DevOps */}
+          <span className="tag">
+            <i className="ph-fill ph-cloud"></i> Cloudflare
+          </span>
+
+          {/* Design */}
+          <span className="tag">
+            <i className="ph-fill ph-figma-logo"></i> Figma
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-palette"></i> Canva
+          </span>
+          <span className="tag">
+            <i className="ph-fill ph-cube"></i> Sketchup
+          </span>
+
+          {/* Game Engines */}
+          <span className="tag">
+            <i className="ph-fill ph-game-controller"></i> Unity
+          </span>
+
+          {/* Office Tools */}
+          <span className="tag">
+            <i className="ph-fill ph-file-text"></i> MS Office
+          </span>
+        </div>
       </div>
 
       {/* Testimonials Card */}
-      <div className="rightSide-card span-2">
+      <div className="rightSide-card span-1">
         <div className="card-header">
           <div className="icon-box orange">
             <i className="ph ph-chat-circle"></i>
@@ -131,7 +204,7 @@ export default function RightSide() {
           </div>
 
           {/* Client 2 */}
-          <div
+          {/* <div
             className="testimonial-item interactive-testimonial"
             onClick={(e) => {
               e.stopPropagation();
@@ -145,10 +218,10 @@ export default function RightSide() {
             </div>
             <p className="client-role">GHL Specialist & Agentic AI Engineer</p>
             <p className="client-tags">CRM • Pipelines • Forms</p>
-          </div>
+          </div> */}
 
           {/* Client 3 */}
-          <div
+          {/* <div
             className="testimonial-item interactive-testimonial"
             onClick={(e) => {
               e.stopPropagation();
@@ -162,7 +235,7 @@ export default function RightSide() {
             </div>
             <p className="client-role">Web Dev & GHL Specialist</p>
             <p className="client-tags">Web Dev • GHL • Automation</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

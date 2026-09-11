@@ -1,7 +1,7 @@
 import React from "react";
-import cv1 from "../assets/JaysonBerdinHerminio-cv-1.png";
-import cv2 from "../assets/JaysonBerdinHerminio-cv-2.png";
-import cvPdf from "../assets/JaysonBerdinHerminio-CV.pdf";
+import cv1 from "../../assets/JaysonBerdinHerminio-cv-1.png";
+import cv2 from "../../assets/JaysonBerdinHerminio-cv-2.png";
+import cvPdf from "../../assets/JaysonBerdinHerminio-CV.pdf";
 
 export default function CvViewer() {
   return (

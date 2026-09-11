@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { navLinks } from "./ModalData";
-import profileImg from "../assets/jaysonherminio.jpg";
+// import { navLinks } from "../ModalData";
+import { navLinks } from "../NavLinks";
+import profileImg from "../../assets/jaysonherminio.jpg";
 
 export default function Sidebar({ isMenuOpen, closeMenu }) {
   return (
