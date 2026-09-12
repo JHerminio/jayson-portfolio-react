@@ -1,4 +1,4 @@
-:root {
+fix the error :root {
   --bg-color: #f2efe9;
   --card-bg: #ffffff;
   --card-bg-blue: #ebf2fc;
@@ -202,7 +202,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-width: 0; /* Prevents flex overflow while preserving hover box-shadows */
+  overflow: hidden;
 }
 
 /* Hero Section */
@@ -289,13 +289,6 @@ body {
   white-space: nowrap;
   flex-grow: 1;
   position: relative;
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 5%,
-    black 95%,
-    transparent
-  );
   mask-image: linear-gradient(
     to right,
     transparent,
@@ -353,6 +346,7 @@ body {
 .rightSide-card:nth-child(2),
 .rightSide-card:nth-child(3) {
   background: var(--card-bg);
+  /* border: none; */
   border: 1px solid var(--border-color);
 }
 
@@ -438,6 +432,7 @@ body {
 .about-illustration {
   flex-grow: 1;
   display: flex;
+  /* align-items: flex-end; */
   justify-content: center;
 }
 
@@ -501,7 +496,6 @@ body {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
 .testimonial-item {
   background: #f8fafc;
   padding: 1rem;
@@ -509,13 +503,11 @@ body {
   transition: var(--transition);
   border: 1.5px solid var(--border-color);
 }
-
 .testimonial-item:hover {
   background: #fff;
   box-shadow: var(--shadow-sm);
   border: 1.5px solid var(--accent-orange);
 }
-
 .interactive-testimonial {
   cursor: pointer;
   position: relative;
@@ -541,35 +533,29 @@ body {
   color: var(--accent-orange);
   transform: translate(2px, -2px);
 }
-
 .client-info {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.25rem;
 }
-
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
 }
-
 .dot.orange {
   background: var(--accent-orange);
 }
-
 .dot.red {
   background: #ef4444;
 }
-
 .client-role {
   font-size: 0.75rem;
   color: var(--text-main);
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
-
 .client-tags {
   font-size: 0.7rem;
   color: var(--accent-orange);
@@ -596,7 +582,6 @@ body {
   z-index: 99999 !important;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1.5rem;
 }
@@ -604,7 +589,6 @@ body {
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
 }
 
 .modal-card {
@@ -674,7 +658,6 @@ body {
 .modal-body p {
   margin-bottom: 1rem;
 }
-
 .modal-body ul {
   list-style: none;
   padding: 0;
@@ -682,7 +665,6 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
-
 .modal-body ul li {
   background: #f8fafc;
   padding: 0.75rem 1rem;
@@ -694,12 +676,24 @@ body {
   color: var(--text-main, #141b2d);
 }
 
-/* --- GET IN TOUCH / CONTACT FORM DESIGN --- */
+/* --- GET IN TOUCH / CONTACT FORM DESIGN ---------------------------------*/
 .contact-wrapper {
   width: 100%;
   text-align: center;
   padding: 10px 0;
 }
+
+/* .contact-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.contact-title .highlight-orange {
+  color: #ff5733;
+} */
 
 .contact-subtitle {
   color: #94a3b8;
@@ -811,6 +805,7 @@ body {
   width: 100%;
 }
 
+/* Sticky Action Bar */
 .cv-action-bar {
   position: sticky;
   top: 0;
@@ -821,6 +816,7 @@ body {
   justify-content: flex-start;
 }
 
+/* Download PDF Pill Button */
 .cv-download-btn {
   display: inline-flex;
   align-items: center;
@@ -842,6 +838,7 @@ body {
   box-shadow: 0 6px 20px rgba(255, 87, 51, 0.45);
 }
 
+/* Stacked Image Container */
 .cv-pages-wrapper {
   display: flex;
   flex-direction: column;
@@ -865,26 +862,37 @@ body {
 }
 
 /* --- CUSTOM MODAL SCROLLBAR --- */
+
+/* 1. Ensure the modal container clips overflow gracefully */
+.modal-overlay-content,
 .modal-body,
 .modal-card {
   overflow-y: auto;
   overflow-x: hidden;
-  padding-right: 8px;
+  padding-right: 8px; /* Keeps content away from the scrollbar */
+
+  /* Firefox Custom Scrollbar */
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }
 
+/* 2. WebKit Browsers (Chrome, Safari, Edge) Scrollbar Width */
+.modal-overlay-content::-webkit-scrollbar,
 .modal-body::-webkit-scrollbar,
 .modal-card::-webkit-scrollbar {
   width: 6px;
 }
 
+/* 3. Track (keeps scrollbar inside rounded corners) */
+.modal-overlay-content::-webkit-scrollbar-track,
 .modal-body::-webkit-scrollbar-track,
 .modal-card::-webkit-scrollbar-track {
   background: transparent;
-  margin: 20px 0;
+  margin: 20px 0; /* Prevents scrollbar from sticking out at top/bottom corners */
 }
 
+/* 4. Scrollbar Thumb (Pill Shape) */
+.modal-overlay-content::-webkit-scrollbar-thumb,
 .modal-body::-webkit-scrollbar-thumb,
 .modal-card::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.18);
@@ -892,9 +900,11 @@ body {
   transition: background-color 0.2s ease;
 }
 
+/* 5. Hover State */
+.modal-overlay-content::-webkit-scrollbar-thumb:hover,
 .modal-body::-webkit-scrollbar-thumb:hover,
 .modal-card::-webkit-scrollbar-thumb:hover {
-  background-color: #ff5733;
+  background-color: #ff5733; /* Matches your accent orange */
 }
 
 /* Responsive Queries */
@@ -905,14 +915,26 @@ body {
   .rightSide-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .rightSide-card.span-2 {
+  .span-2 {
     grid-column: span 3;
+  }
+  .rightSide-card:nth-child(2),
+  .rightSide-card:nth-child(3),
+  .rightSide-card:nth-child(4),
+  .rightSide-card:nth-child(5) {
+    grid-column: span 1;
   }
 }
 
 @media (max-width: 992px) {
   .rightSide-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .span-2 {
+    grid-column: span 2;
+  }
+  .rightSide-card:nth-child(n) {
+    grid-column: span 1;
   }
   .rightSide-card.span-2 {
     grid-column: span 2;
@@ -952,7 +974,6 @@ body {
   .sidebar.active {
     left: 0;
   }
-
   .sidebar .footer {
     margin-top: auto;
     padding-top: 1.5rem;
@@ -976,21 +997,17 @@ body {
     color: var(--accent-blue);
     font-size: 1rem;
   }
-
   .hero-section {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
   }
-
   .hero-title {
     font-size: 2.2rem;
   }
-
   .rightSide-grid {
     grid-template-columns: 1fr;
   }
-
   .span-2,
   .span-1 {
     grid-column: span 1 !important;
