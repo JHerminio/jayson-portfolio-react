@@ -7,7 +7,7 @@ import LeftSidebar from "./components/sideBar/LeftSidebar";
 import RightSidebar from "./components/mainContent/RightSidebar";
 
 import HeroSection from "./components/mainContent/HeroSection";
-import Ticker from "./components/Ticker";
+import Ticker from "./components/mainContent/Ticker";
 import ModalOverlay from "./components/ModalOverlay";
 import "./App.css";
 

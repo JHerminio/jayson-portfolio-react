@@ -10,16 +10,16 @@ export const navLinks = [
   },
   { path: "/about", label: "About", icon: "ph ph-user", key: "About" },
   {
+    path: "/cvViewer",
+    label: "Hire Me",
+    icon: "ph ph-file-text",
+    key: "CV Viewer",
+  },
+  {
     path: "/contact",
     label: "Contact",
     icon: "ph ph-chat-circle",
     key: "Contact",
-  },
-  {
-    path: "/cvViewer",
-    label: "CV Viewer",
-    icon: "ph ph-file-text",
-    key: "CV Viewer",
   },
   {
     path: "/testimonials",

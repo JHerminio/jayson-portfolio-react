@@ -4,7 +4,7 @@ import project1Img from "../../assets/little-bloomer-academy.webp"; // Little Bl
 import project2Img from "../../assets/summer-splash-community-fun-run.webp"; // Summer Splash
 import project3Img from "../../assets/jh-background.jpg"; // Front-End Developer
 import project4Img from "../../assets/project-banner.png"; //
-// import aboutImg1 from "../assets/about.png";
+// import aboutImg1 from "../../assets/about.png";
 
 // import Credentials from "./Credentials";
 
@@ -56,7 +56,7 @@ export default function RightSide() {
       {/* Credentials Card */}
       <div
         className="rightSide-card span-1 interactive-card"
-        onClick={() => navigate("/about")}
+        onClick={() => navigate("/credentials")}
       >
         <div className="card-header">
           <div className="icon-box orange">
@@ -77,7 +77,7 @@ export default function RightSide() {
       {/* My Tech Stacks Card */}
       <div
         className="rightSide-card span-2 interactive-card"
-        onClick={() => navigate("/about")}
+        onClick={() => navigate("")}
       >
         <div className="card-header">
           <div className="icon-box orange">

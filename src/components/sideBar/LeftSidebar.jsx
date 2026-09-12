@@ -21,13 +21,28 @@ export default function Sidebar({ isMenuOpen, closeMenu }) {
         <p className="profile-handle">@jherminio</p>
 
         <div className="social-links">
-          <a href="#" className="social-btn" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/jayson.herminio/"
+            target="_blank"
+            className="social-btn"
+            aria-label="Facebook"
+          >
             <i className="ph-fill ph-facebook-logo"></i>
           </a>
-          <a href="#" className="social-btn" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/jbherminio/"
+            target="_blank"
+            className="social-btn"
+            aria-label="LinkedIn"
+          >
             <i className="ph-fill ph-linkedin-logo"></i>
           </a>
-          <a href="#" className="social-btn" aria-label="GitHub">
+          <a
+            href="https://github.com/JHerminio"
+            target="_blank"
+            className="social-btn"
+            aria-label="GitHub"
+          >
             <i className="ph-fill ph-github-logo"></i>
           </a>
         </div>

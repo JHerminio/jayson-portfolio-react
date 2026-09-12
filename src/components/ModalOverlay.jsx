@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { modalContentMap } from "./ModalData";
+import { modalContentMap } from "./modalView/ModalData";
 
 export default function ModalOverlay() {
   const location = useLocation();

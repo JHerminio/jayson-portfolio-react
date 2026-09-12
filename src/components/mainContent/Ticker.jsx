@@ -2,12 +2,16 @@ import React from "react";
 
 export default function Ticker() {
   const tools = [
-    { icon: "ph-fill ph-google-logo", name: "Google Workspace" },
-    { icon: "ph-fill ph-headset", name: "Zendesk" },
-    { icon: "ph-fill ph-chat-centered-text", name: "Intercom" },
-    { icon: "ph-fill ph-slack-logo", name: "Slack" },
-    { icon: "ph-fill ph-code", name: "Claude Code" },
+    { icon: "ph-fill ph-code", name: "HTML" },
+    { icon: "ph-fill ph-paint-brush", name: "CSS" },
+    { icon: "ph-fill ph-code", name: "JavaScript" },
+    { icon: "ph-fill ph-atom", name: "React" },
+    { icon: "ph-fill ph-code", name: "TypeScript" },
+    { icon: "ph-fill ph-git-branch", name: "Git" },
     { icon: "ph-fill ph-github-logo", name: "GitHub" },
+    { icon: "ph-fill ph-terminal-window", name: "VS Code" },
+    { icon: "ph-fill ph-palette", name: "Canva" },
+    { icon: "ph-fill ph-file-text", name: "MS Office" },
   ];
 
   return (
