@@ -1,22 +1,24 @@
 import React from "react";
+import certificateAttendance from "../../assets/Certificate-of-Attendance.webp";
+import certificateCompletion from "../../assets/Certificate-of-Completion.webp";
 
 const credentialsList = [
   {
     id: 1,
     title: "Certified Admin",
-    imageUrl: "/../../assets/Certificate-of-Attendance.webp",
-    linkUrl: "../../assets/Certificate-of-Attendance.webp",
+    imageUrl: certificateAttendance,
+    linkUrl: certificateAttendance,
   },
   {
     id: 2,
     title: "React Specialist",
-    imageUrl: "/../../assets/Certificate-of-Attendance.webp",
-    linkUrl: "../../assets/Certificate-of-Completion.webp",
+    imageUrl: certificateCompletion,
+    linkUrl: certificateCompletion,
   },
   {
     id: 3,
     title: "WP Developer",
-    imageUrl: "/path-to-image-3.png",
+    imageUrl: certificateCompletion,
     linkUrl: "https://example.com/credential-3",
   },
 ];

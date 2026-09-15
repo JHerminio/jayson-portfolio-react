@@ -195,6 +195,10 @@ body {
   padding-top: 0.5rem;
   flex-shrink: 0;
 }
+.footer i {
+  color: var(--accent-blue);
+  font-size: 1rem;
+}
 
 /* Main Content */
 .main-content {

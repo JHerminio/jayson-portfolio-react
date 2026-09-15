@@ -15,7 +15,7 @@ export default function MobileFooter() {
         <span suppressHydrationWarning>
           {currentYear || new Date().getFullYear()}
         </span>{" "}
-        {/* Jayson Herminio. All rights reserved. */}
+        Jayson Herminio. All rights reserved.
       </p>
     </footer>
   );
