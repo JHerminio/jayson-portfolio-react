@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import MobileHeader from "./components/sideBar/MobileHeader";
-import MobileFooter from "./components/sideBar/MobileFooter";
+// import MobileFooter from "./components/sideBar/MobileFooter";
 
 import LeftSidebar from "./components/sideBar/LeftSidebar";
 import RightSidebar from "./components/mainContent/RightSidebar";
@@ -28,7 +28,7 @@ function MainLayout() {
           <HeroSection />
           <Ticker />
           <RightSidebar />
-          <MobileFooter />
+          {/* <MobileFooter /> */}
         </main>
       </div>
 
