@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import CvViewer from "../sideBar/CvViewer";
-import SingleCredentialsCard from "./CredentialsList";
+import CredentialsList from "./CredentialsList";
 
 import project1Img from "../../assets/little-bloomer-academy.webp";
 import project2Img from "../../assets/summer-splash-community-fun-run.webp";
@@ -380,7 +380,7 @@ export const modalContentMap = {
   "/credentials": {
     icon: "ph-certificate",
     title: "Credentials",
-    content: <SingleCredentialsCard />,
+    content: <CredentialsList />,
   },
 
   "/testimonials": {

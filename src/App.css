@@ -901,6 +901,137 @@ body {
   background-color: #ff5733;
 }
 
+/* Credentials Card Container */
+.credentials-card {
+  width: 100%;
+  max-width: 448px;
+  margin: 0 auto;
+  background-color: var(--card-bg, #ffffff);
+  border-radius: var(--radius-lg, 24px);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.05));
+}
+
+/* Header Section */
+.credentials-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.credentials-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm, 8px);
+  background-color: var(--accent-orange-light, #feede6);
+  color: var(--accent-orange, #f37042);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.credentials-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.credentials-title-group h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-main, #141b2d);
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.credentials-title-group p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted, #6b7280);
+  margin: 0;
+}
+
+/* 3-Column Grid */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+/* Item Link Container */
+.credential-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Circular Avatar Frame */
+/* .credential-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #e0f2fe;
+  border: 2px solid #bae6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.credential-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
+.credential-item:hover .credential-avatar {
+  transform: scale(1.05);
+}
+
+/* Pill Label Badge */
+.credential-badge {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--text-main, #0f172a);
+  border-radius: 9999px;
+  text-align: center;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.credential-item:hover .credential-badge {
+  background-color: var(--accent-blue, #3b82f6);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .credentials-grid {
+    gap: 0.5rem;
+  }
+
+  .credential-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .credential-badge {
+    font-size: 0.625rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
 /* Responsive Queries */
 @media (max-width: 1200px) {
   .hero-title {
