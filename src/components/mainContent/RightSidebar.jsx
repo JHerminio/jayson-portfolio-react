@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import project1Img from "../../assets/little-bloomer-academy.webp"; // Little Bloomer Academy
-import project2Img from "../../assets/summer-splash-community-fun-run.webp"; // Summer Splash
-import project3Img from "../../assets/jh-background.jpg"; // Front-End Developer
-import project4Img from "../../assets/project-banner.png"; //
+import project1Img from "../../assets/little-bloomer-academy.webp";
+import project2Img from "../../assets/summer-splash-community-fun-run.webp";
+import project3Img from "../../assets/jh-background.jpg";
+import project4Img from "../../assets/project-banner.png";
 // import aboutImg1 from "../../assets/about.png";
 
-// import Credentials from "./Credentials";
+// import CredentialsCard3D from "./CredentialsCard3D";
 
 export default function RightSide() {
   const navigate = useNavigate();
@@ -71,7 +71,7 @@ export default function RightSide() {
           </div>
           <span className="cert-label">Certified Admin</span>
         </div>
-        <div>{/* <Credentials /> */}</div>
+        <div>{/* <CredentialsCard3D /> */}</div>
       </div>
 
       {/* My Tech Stacks Card */}

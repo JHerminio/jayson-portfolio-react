@@ -205,7 +205,7 @@ export const modalContentMap = {
                   lineHeight: "1.4",
                 }}
               >
-                HTML, CSS, JavaScript, UI/UX Desing
+                HTML, CSS, JavaScript, UI/UX Design
               </p>
             </div>
           </a>
@@ -268,9 +268,7 @@ export const modalContentMap = {
                   lineHeight: "1.4",
                 }}
               >
-                Team GFE proudly invites everyone to join our first-ever
-                community fun run on May 10, 2026 at the Guiguinto Municipal
-                Oval!
+                Graphic Design
               </p>
             </div>
           </a>
