@@ -37,8 +37,8 @@ export default function ContactForm() {
         Get In <span className="highlight-orange">Touch</span>
       </h2> */}
       <p className="contact-subtitle">
-        Have an exciting venture or a challenging build ahead? Reach out today
-        to schedule a consulting slot.
+        Whether you have a project in mind, a question about my tech stack, or
+        just want to say hi, my inbox is always open.
       </p>
 
       <div className="contact-card-container">

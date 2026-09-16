@@ -1,12 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import project1Img from "../../assets/little-bloomer-academy.webp";
-import project2Img from "../../assets/summer-splash-community-fun-run.webp";
-import project3Img from "../../assets/jh-background.jpg";
+// import project1Img from "../../assets/little-bloomer-academy.webp";
+// import project2Img from "../../assets/summer-splash-community-fun-run.webp";
+// import project3Img from "../../assets/jh-background.jpg";
 import project4Img from "../../assets/project-banner.png";
-// import aboutImg1 from "../../assets/about.png";
-
-// import CredentialsCard3D from "./CredentialsCard3D";
+import ContactForm from "../modalView/ContactForm";
 
 export default function RightSide() {
   const navigate = useNavigate();
@@ -34,44 +32,6 @@ export default function RightSide() {
         <div
           style={{ display: "flex", flexDirection: "column", gap: "0.875rem" }}
         ></div>
-      </div>
-
-      {/* About Card */}
-      <div
-        className="rightSide-card span-1 interactive-card"
-        onClick={() => navigate("/about")}
-      >
-        <div className="card-header">
-          <div className="icon-box orange">
-            <i className="ph ph-user"></i>
-          </div>
-          <h3>ABOUT</h3>
-        </div>
-        <p className="card-desc">Who I am and how I work.</p>
-        <div className="about-illustration">
-          {/* <img src={aboutImg1} alt="Working" /> */}
-        </div>
-      </div>
-
-      {/* Credentials Card */}
-      <div
-        className="rightSide-card span-1 interactive-card"
-        onClick={() => navigate("/credentials")}
-      >
-        <div className="card-header">
-          <div className="icon-box orange">
-            <i className="ph ph-certificate"></i>
-          </div>
-          <h3>CREDENTIALS</h3>
-        </div>
-        <p className="card-desc">Certificate</p>
-        <div className="badge-container">
-          <div className="cert-badge">
-            <i className="ph-fill ph-seal-check"></i>
-          </div>
-          <span className="cert-label">Certified Admin</span>
-        </div>
-        <div>{/* <CredentialsCard3D /> */}</div>
       </div>
 
       {/* My Tech Stacks Card */}
@@ -170,6 +130,43 @@ export default function RightSide() {
           </span>
         </div>
       </div>
+      {/* About Card */}
+      <div
+        className="rightSide-card span-1 interactive-card"
+        onClick={() => navigate("/about")}
+      >
+        <div className="card-header">
+          <div className="icon-box orange">
+            <i className="ph ph-user"></i>
+          </div>
+          <h3>ABOUT</h3>
+        </div>
+        <p className="card-desc">Who I am and how I work.</p>
+        <div className="about-illustration">
+          {/* <img src={aboutImg1} alt="Working" /> */}
+        </div>
+      </div>
+
+      {/* Credentials Card */}
+      <div
+        className="rightSide-card span-1 interactive-card"
+        onClick={() => navigate("/credentials")}
+      >
+        <div className="card-header">
+          <div className="icon-box orange">
+            <i className="ph ph-certificate"></i>
+          </div>
+          <h3>CREDENTIALS</h3>
+        </div>
+        <p className="card-desc">Certificate</p>
+        <div className="badge-container">
+          <div className="cert-badge">
+            <i className="ph-fill ph-seal-check"></i>
+          </div>
+          <span className="cert-label">Certified Admin</span>
+        </div>
+        <div>{/* <CredentialsCard3D /> */}</div>
+      </div>
 
       {/* Testimonials Card */}
       <div className="rightSide-card span-1">
@@ -236,6 +233,20 @@ export default function RightSide() {
             <p className="client-role">Web Dev & GHL Specialist</p>
             <p className="client-tags">Web Dev • GHL • Automation</p>
           </div> */}
+        </div>
+      </div>
+
+      {/* Contact Card */}
+      <div className="rightSide-card span-2">
+        <div className="card-header">
+          <div className="icon-box orange">
+            <i className="ph ph-chat-circle"></i>
+          </div>
+          <h3>Let’s Build Something Amazing Together</h3>
+        </div>
+        <p className="card-desc"></p>
+        <div>
+          <ContactForm />
         </div>
       </div>
     </div>
