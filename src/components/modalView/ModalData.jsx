@@ -316,7 +316,7 @@ export const modalContentMap = {
                 <strong
                   style={{ fontSize: "0.95rem", color: "var(--text-main)" }}
                 >
-                  Front-End Developer & UI/UX Designer
+                  My Portfolio
                 </strong>
                 <i
                   className="ph ph-arrow-up-right"

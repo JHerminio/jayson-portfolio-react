@@ -242,7 +242,7 @@ export default function RightSide() {
           <div className="icon-box orange">
             <i className="ph ph-chat-circle"></i>
           </div>
-          <h3>Let’s Build Something Amazing Together</h3>
+          <h3>Need a Developer? Let’s Talk.</h3>
         </div>
         <p className="card-desc"></p>
         <div>
