@@ -1,1 +1,2 @@
-<img width="1366" height="1588" alt="React Portfolio" src="https://github.com/user-attachments/assets/4e8a61e3-7732-4647-bfdc-0cd60957654a" />
+<img width="1366" height="1588" alt="Jayson&#39;s Portfolio in react" src="https://github.com/user-attachments/assets/d578b61e-7d12-4a10-bfeb-0ee046e47896" />
+
